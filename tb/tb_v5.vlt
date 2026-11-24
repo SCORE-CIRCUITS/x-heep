@@ -4,4 +4,4 @@
 
 `verilator_config
 
-lint_off -rule PROCASSINIT -file "*tb/yosys_spiflash.sv" -match "Procedural assignment to declaration with initial value: '*'"
+// lint_off -rule PROCASSINIT -file "*tb/yosys_spiflash.sv" -match "Procedural assignment to declaration with initial value: '*'"

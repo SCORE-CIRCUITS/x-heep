@@ -46,8 +46,8 @@ module lzc #(
     localparam int unsigned NumLevels = $clog2(WIDTH);
 
     logic [WIDTH-1:0][NumLevels-1:0] index_lut;
-    logic [2**NumLevels-1:0] sel_nodes                  /* verilator split_var */;
-    logic [2**NumLevels-1:0][NumLevels-1:0] index_nodes /* verilator split_var */;
+    logic [(1 << NumLevels)-1:0] sel_nodes                  /* verilator split_var */;
+    logic [(1 << NumLevels)-1:0][NumLevels-1:0] index_nodes /* verilator split_var */;
 
     logic [WIDTH-1:0] in_tmp;
 
